@@ -134,11 +134,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .site-nav a:hover,
-.site-nav a[aria-current="true"] { color: var(--ink); }
+.site-nav a[aria-current="location"] { color: var(--ink); }
 .site-nav a:hover::after,
-.site-nav a[aria-current="true"]::after { right: 0; }
+.site-nav a[aria-current="location"]::after { right: 0; }
 
 .nav-toggle {
+  position: relative;
   display: none;
   width: 42px;
   height: 42px;
@@ -149,13 +150,21 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .nav-toggle span {
-  display: block;
-  width: 100%;
+  position: absolute;
+  left: 10px;
+  width: 22px;
   height: 2px;
-  margin-block: 5px;
+  margin: 0;
   background: var(--ink);
-  transition: transform 180ms ease, opacity 180ms ease;
+  transition: top 180ms ease, transform 180ms ease, opacity 180ms ease;
 }
+
+.nav-toggle span:nth-child(1) { top: 13px; }
+.nav-toggle span:nth-child(2) { top: 20px; }
+.nav-toggle span:nth-child(3) { top: 27px; }
+.nav-toggle[aria-expanded="true"] span:nth-child(1) { top: 20px; transform: rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(3) { top: 20px; transform: rotate(-45deg); }
 
 .hero {
   position: relative;
@@ -474,8 +483,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .project-facts div { border-left: 2px solid var(--gold); padding-left: 13px; }
 .project-facts strong, .project-facts span { display: block; }
-.project-facts strong { font-size: 1.06rem; }
-.project-facts span { margin-top: 4px; color: var(--ink-soft); font-size: 1.1rem; line-height: 1.35; }
+.project-facts strong { font-size: 1.3rem; line-height: 1.15; }
+.project-facts span { margin-top: 6px; color: var(--ink-soft); font-size: 1.05rem; line-height: 1.4; }
 
 .tag-list,
 .skill-list {
@@ -508,6 +517,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .section-dark { color: var(--paper); background: var(--charcoal); }
 .section-dark .section-kicker { color: #d6c67f; }
 .section-dark .section-heading > p:last-child { color: var(--charcoal-soft); }
+.publication-note { margin: -18px 0 28px; color: var(--charcoal-soft); font-size: 1rem; }
 
 .publication-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid #3b4248; }
 .publication {
@@ -601,9 +611,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .site-nav.is-open { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .site-nav a { padding: 12px; }
   .site-nav a::after { display: none; }
-  .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-  .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
-  .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
   .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(220px, 0.48fr); gap: 36px; }
   .hero h1 { font-size: 4.85rem; }
   .section h2, .contact-section h2 { font-size: 2.8rem; }
@@ -615,6 +622,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .sticky-heading { position: static; }
   .education-grid { grid-template-columns: 1fr 1fr; }
   .education-item:first-child { grid-column: 1 / -1; }
+}
+
+@media (min-width: 721px) and (max-width: 980px) {
+  .research-item:nth-child(3) { grid-column: 1 / -1; }
 }
 
 @media (max-width: 720px) {
@@ -634,10 +645,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .portrait-wrap { display: none; }
   .mobile-portrait {
     display: block;
-    float: none;
-    width: 80px;
-    height: 107px;
-    margin: 4px 0 22px auto;
+    width: 96px;
+    height: 128px;
+    margin: 0 0 24px;
     object-fit: cover;
     object-position: center top;
     box-shadow: var(--shadow);
@@ -648,7 +658,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .research-item { min-height: 0; }
   .research-item-foundation { grid-template-columns: 1fr; gap: 12px; }
   .project-featured { margin-inline: -16px; padding-inline: 16px; }
-  .project-meta { align-items: flex-start; flex-direction: column; gap: 7px; }
+  .project-meta { align-items: flex-start; flex-direction: column; gap: 7px; letter-spacing: 0.055em; }
   .project-facts { grid-template-columns: 1fr; }
   .project-facts div { padding-block: 2px 10px; }
   .publication { grid-template-columns: 1fr; gap: 14px; }

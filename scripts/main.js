@@ -19,6 +19,13 @@ navToggle.addEventListener('click', () => {
 
 navLinks.forEach((link) => link.addEventListener('click', closeNavigation));
 
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && nav.classList.contains('is-open')) {
+    closeNavigation();
+    navToggle.focus();
+  }
+});
+
 window.addEventListener('scroll', () => {
   header.classList.toggle('is-scrolled', window.scrollY > 12);
 }, { passive: true });
@@ -27,7 +34,11 @@ const sectionObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) return;
     navLinks.forEach((link) => {
-      link.toggleAttribute('aria-current', link.getAttribute('href') === `#${entry.target.id}`);
+      if (link.getAttribute('href') === `#${entry.target.id}`) {
+        link.setAttribute('aria-current', 'location');
+      } else {
+        link.removeAttribute('aria-current');
+      }
     });
   });
 }, { rootMargin: '-25% 0px -65% 0px', threshold: 0 });
