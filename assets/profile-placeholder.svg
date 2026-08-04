@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">DongJun Lee profile photo placeholder</title>
+  <desc id="desc">A neutral geometric placeholder to be replaced by a professional headshot.</desc>
+  <rect width="720" height="900" fill="#e5e1d5"/>
+  <rect x="34" y="34" width="652" height="832" fill="none" stroke="#b3a369" stroke-width="2"/>
+  <circle cx="360" cy="350" r="128" fill="#b9bec0"/>
+  <path d="M130 804c18-182 103-277 230-277s212 95 230 277" fill="#b9bec0"/>
+  <text x="360" y="820" text-anchor="middle" fill="#46515b" font-family="Arial, sans-serif" font-size="24" font-weight="700">PROFILE PHOTO</text>
+</svg>
