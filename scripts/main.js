@@ -35,18 +35,3 @@ const sectionObserver = new IntersectionObserver((entries) => {
 sections.forEach((section) => sectionObserver.observe(section));
 
 document.querySelector('[data-year]').textContent = new Date().getFullYear();
-
-document.querySelectorAll('.resume-link').forEach(async (link) => {
-  try {
-    const response = await fetch(link.getAttribute('href'), { method: 'HEAD' });
-    if (response.ok) return;
-  } catch (_) {
-    // Local file previews can reject HEAD requests; leave the link available there.
-    if (window.location.protocol === 'file:') return;
-  }
-
-  link.setAttribute('aria-disabled', 'true');
-  link.removeAttribute('download');
-  link.setAttribute('title', 'Résumé PDF will be available after the final file is added.');
-  link.addEventListener('click', (event) => event.preventDefault());
-});
