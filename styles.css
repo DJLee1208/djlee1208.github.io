@@ -517,7 +517,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .section-dark { color: var(--paper); background: var(--charcoal); }
 .section-dark .section-kicker { color: #d6c67f; }
 .section-dark .section-heading > p:last-child { color: var(--charcoal-soft); }
-.publication-note { margin: -18px 0 28px; color: var(--charcoal-soft); font-size: 1rem; }
+.publication-group-title { margin: 40px 0 20px; color: #e4d796; font-size: 1.25rem; font-weight: 800; }
+.publication-note { margin: 0 0 20px; color: var(--charcoal-soft); font-size: 1rem; }
 
 .publication-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid #3b4248; }
 .publication {
@@ -583,6 +584,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .contact-section { padding-block: clamp(60px, 6vw, 88px); color: var(--paper); background: var(--ink); }
 .contact-section .section-kicker { color: #d6c67f; }
+#contact-title { font-size: clamp(2.75rem, 5vw, 4.5rem); }
 .contact-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 0.7fr); gap: clamp(48px, 7vw, 84px); align-items: end; }
 .contact-panel > p { margin: 0; color: #c2c9ce; }
 .contact-email { display: inline-block; margin-top: 24px; color: var(--paper); font-size: 1.65rem; font-weight: 700; text-underline-offset: 6px; }

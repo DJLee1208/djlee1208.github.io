@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DongJun Lee | Machine Learning &amp; Optimization</title>
-  <meta name="description" content="Georgia Tech ISyE Ph.D. student developing optimization-grounded machine learning for constrained decision-making and large-scale mixed-integer optimization.">
+  <meta name="description" content="Georgia Tech Ph.D. student researching learning-augmented optimization, neural solution prediction, and feasibility repair, with a background in time-series deep learning.">
   <meta name="author" content="DongJun Lee">
   <meta name="theme-color" content="#b3a369">
   <link rel="canonical" href="https://djlee1208.github.io/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260804-3">
+  <link rel="stylesheet" href="styles.css?v=20260928-1">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://djlee1208.github.io/">
   <meta property="og:title" content="DongJun Lee | Machine Learning &amp; Optimization">
-  <meta property="og:description" content="Optimization-grounded machine learning for constrained sequential decision-making, large-scale mixed-integer optimization, and feasibility-preserving decision systems.">
+  <meta property="og:description" content="Learning-augmented optimization for large-scale constrained systems, building on time-series forecasting and representation learning.">
   <meta property="og:image" content="https://djlee1208.github.io/assets/og-card.png">
   <meta property="og:image:alt" content="DongJun Lee, optimization and machine learning researcher at Georgia Tech">
   <meta property="og:image:width" content="1200">
@@ -79,8 +79,8 @@
           <p class="eyebrow">Georgia Tech ISyE · NSF AI4OPT</p>
           <h1 id="hero-title">DongJun Lee</h1>
           <p class="hero-role">Ph.D. Student · Machine Learning &amp; Optimization</p>
-          <p class="hero-thesis">Optimization-grounded machine learning for constrained sequential decision-making under uncertainty.</p>
-          <p class="hero-summary">I develop fast, feasibility-preserving methods for large-scale decision systems whose actions are coupled over time and across system components.</p>
+          <p class="hero-thesis">Learning-augmented optimization for large-scale constrained systems.</p>
+          <p class="hero-summary">My work combines neural solution prediction with structure-aware feasibility repair, building on my background in time-series forecasting and representation learning.</p>
           <p class="hero-affiliation">Advised by Prof. Pascal Van Hentenryck</p>
 
           <div class="hero-actions" aria-label="Primary links">
@@ -106,12 +106,13 @@
       <div class="container two-column-intro">
         <div>
           <p class="section-kicker">About</p>
-          <h2 id="about-title">Constrained sequential decision-making under uncertainty.</h2>
+          <h2 id="about-title">Machine learning meets mathematical structure.</h2>
         </div>
         <div class="intro-copy">
           <img class="mobile-portrait" src="assets/profile.jpg" width="1416" height="1888" alt="Portrait of DongJun Lee">
-          <p>I develop optimization-grounded machine learning methods for systems whose decisions are coupled over time and across system components, and must satisfy hard operational constraints. My work studies how learned models can propose or construct decisions while optimization structure and feasibility repair preserve temporal and system-wide consistency.</p>
-          <p>My current work develops full ML proxies for large-scale mixed-integer optimization and context-conditioned policies for multistage stochastic optimization. The proxy research targets instances with more than 100,000 discrete variables and millisecond-scale inference and repair. My earlier work in time-series forecasting and anomaly detection provides a foundation in long-range temporal modeling, multivariate dependency learning, and uncertainty-aware representation.</p>
+          <p>I am a Ph.D. student in Industrial Engineering at Georgia Tech, advised by Pascal Van Hentenryck in the NSF AI4OPT Institute. My research focuses on learning-augmented optimization: combining machine learning with mathematical structure to solve constrained problems more efficiently.</p>
+          <p>I study optimization proxies and feasibility-repair methods for systems whose decisions are coupled over time and across resources. My current work includes multi-period resource allocation and large-scale mixed-integer optimization, using power-system operations as a testbed for general methodological questions.</p>
+          <p>Before my Ph.D., I worked on deep learning for time-series forecasting and anomaly detection at Seoul National University. This background informs my work on temporal representations and structured prediction. I am broadly interested in efficient learning and optimization methods for planning and resource allocation.</p>
         </div>
       </div>
     </section>
@@ -127,23 +128,18 @@
         <div class="research-grid">
           <article class="research-item">
             <span class="item-number" aria-hidden="true">01</span>
-            <h3>Large-Scale Optimization Proxies</h3>
-            <p>Learning fast solution mappings for large mixed-integer problems with strong temporal and system-wide coupling.</p>
+            <h3>Optimization Proxies &amp; Repair</h3>
+            <p>Neural solution prediction and structured feasibility repair for resource allocation and mixed-integer optimization.</p>
           </article>
           <article class="research-item">
             <span class="item-number" aria-hidden="true">02</span>
-            <h3>Decision Policies Under Uncertainty</h3>
-            <p>Developing context-conditioned policies for multistage settings where information arrives over time and decisions must remain operationally valid.</p>
+            <h3>Temporal Representation Learning</h3>
+            <p>Long-range forecasting and multivariate anomaly detection, providing a foundation for learning from temporal structure.</p>
           </article>
           <article class="research-item">
             <span class="item-number" aria-hidden="true">03</span>
-            <h3>Feasibility-Preserving Learning &amp; Repair</h3>
-            <p>Integrating optimization structure, structured repair, and deployment-aligned objectives into learned decision pipelines.</p>
-          </article>
-          <article class="research-item research-item-foundation">
-            <span class="item-number">Foundation</span>
-            <h3>Sequential &amp; Distributional Modeling</h3>
-            <p>Long-range temporal representation, multivariate dependency modeling, scenario generation, and uncertainty calibration.</p>
+            <h3>Contextual Multistage Optimization</h3>
+            <p>Context-conditioned decision policies for problems where information arrives over time and decisions must respect operational constraints.</p>
           </article>
         </div>
       </div>
@@ -153,46 +149,67 @@
       <div class="container">
         <div class="section-heading split-heading">
           <div>
-            <p class="section-kicker">Selected Projects</p>
+            <p class="section-kicker">Selected Research</p>
             <h2 id="projects-title">Research in focus</h2>
           </div>
-          <p>Current and earlier research across optimization proxies, multistage decision policies, and sequential representation learning.</p>
+          <p>Submitted work, published methods, and ongoing research in optimization and temporal learning.</p>
         </div>
 
         <div class="projects-list">
           <article class="project project-featured">
             <div class="project-meta">
-              <span class="status">Ongoing Research</span>
-              <span>Energy Systems · Unit Commitment · Optimization Proxies</span>
+              <span class="status">Under Review at ICLR 2027</span>
+              <span>Coauthored Work · Multi-Period Optimization</span>
             </div>
             <div class="project-body">
               <div>
-                <h3>A Full ML Proxy for Large-Scale Mixed-Integer Optimization</h3>
-                <p>Developing a full ML proxy for large-scale, temporally coupled mixed-integer optimization. The target instances contain more than 100,000 discrete variables, and the research aims to combine learned inference with structured feasibility repair at millisecond-scale latency while preserving system-wide operational constraints.</p>
+                <h3>SMOP — Self-Supervised Multi-Period Optimization</h3>
+                <p>A self-supervised proxy for multi-period resource-allocation linear programs. SMOP combines temporal neural representations with Backward–Forward Bound Propagation, Box–Balance Projection Repair, and Sequential Forward Recovery. Evaluated on fixed-commitment economic dispatch, it trains without optimal-solution labels.</p>
               </div>
-              <div class="project-facts" aria-label="Project targets">
-                <div><strong>100K+</strong><span>discrete variables</span></div>
-                <div><strong>ms-scale</strong><span>target latency</span></div>
-                <div><strong>ML + repair</strong><span>feasibility pipeline</span></div>
-              </div>
+              <ul class="tag-list" aria-label="SMOP topics">
+                <li>Self-supervised learning</li>
+                <li>Linear programming</li>
+                <li>Feasibility repair</li>
+              </ul>
             </div>
           </article>
 
           <article class="project">
             <div class="project-meta">
-              <span class="status status-neutral">Research Framework</span>
-              <span>Multistage Optimization</span>
+              <span class="status status-neutral">Ongoing Research</span>
+              <span>Mixed-Integer Optimization · Unit Commitment</span>
             </div>
             <div class="project-body">
               <div>
-                <h3>Contextual Decision Policies for Multistage Stochastic Optimization</h3>
-                <p>Developing context-conditioned decision policies for multistage stochastic optimization, with optimization-integrated training, feasibility-aware deployment, and stage-wise evaluation under the information available at each decision point.</p>
-                <a class="text-link" href="https://github.com/LearningToOptimize/DecisionRules.jl" target="_blank" rel="noopener noreferrer">View DecisionRules.jl <span aria-hidden="true">↗</span></a>
+                <h3>Full-Solution Proxies for Large-Scale Mixed-Integer Optimization</h3>
+                <p>I am investigating neural solution prediction and structured repair for large-scale optimization problems with discrete decisions, continuous allocations, and temporal constraints. Unit commitment provides a testbed for studying feasibility, solution quality, and runtime trade-offs.</p>
+              </div>
+              <ul class="tag-list" aria-label="Mixed-integer optimization topics">
+                <li>Neural solution prediction</li>
+                <li>Discrete decisions</li>
+                <li>Temporal constraints</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-meta">
+              <span class="status status-neutral">NeurIPS 2024</span>
+              <span>Equal Contribution · Time-Series Forecasting</span>
+            </div>
+            <div class="project-body">
+              <div>
+                <h3>Spectral Attention for Long-Range Forecasting</h3>
+                <p>A forecasting method that uses spectral filtering and attention to preserve long-range temporal information beyond a model’s fixed input window.</p>
+                <div class="inline-links">
+                  <a class="text-link" href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/f6adf61977467560f79b95485d1f3a79-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+                  <a class="text-link" href="https://github.com/DJLee1208/BSA_2024" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+                </div>
               </div>
               <ul class="tag-list" aria-label="Project topics">
-                <li>Stochastic optimization</li>
-                <li>Decision rules</li>
-                <li>Differentiable optimization</li>
+                <li>Spectral attention</li>
+                <li>Long-range dependencies</li>
+                <li>Time-series forecasting</li>
               </ul>
             </div>
           </article>
@@ -200,12 +217,12 @@
           <article class="project">
             <div class="project-meta">
               <span class="status status-neutral">ICML 2025</span>
-              <span>Time-Series Anomaly Detection</span>
+              <span>Coauthored Work · Time-Series Anomaly Detection</span>
             </div>
             <div class="project-body">
               <div>
-                <h3>Causality-Aware Contrastive Learning</h3>
-                <p>A robust multivariate time-series anomaly detection framework that incorporates causal structure into contrastive representation learning.</p>
+                <h3>CAROTS — Multivariate Time-Series Anomaly Detection</h3>
+                <p>Causality-aware contrastive learning for representations that distinguish normal behavior from anomalies in multivariate time series.</p>
                 <div class="inline-links">
                   <a class="text-link" href="https://proceedings.mlr.press/v267/kim25aa.html" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
                   <a class="text-link" href="https://github.com/kimanki/CAROTS" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
@@ -221,22 +238,19 @@
 
           <article class="project">
             <div class="project-meta">
-              <span class="status status-neutral">NeurIPS 2024</span>
-              <span>Long-Range Time-Series Forecasting</span>
+              <span class="status status-neutral">Ongoing Research</span>
+              <span>Multistage Optimization</span>
             </div>
             <div class="project-body">
               <div>
-                <h3>Spectral Attention for Long-Range Forecasting</h3>
-                <p>A spectral-attention mechanism that helps sequence models preserve temporal correlations and capture dependencies extending beyond fixed look-back windows.</p>
-                <div class="inline-links">
-                  <a class="text-link" href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/f6adf61977467560f79b95485d1f3a79-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
-                  <a class="text-link" href="https://github.com/DJLee1208/BSA_2024" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
-                </div>
+                <h3>Contextual Decision Policies for Multistage Stochastic Optimization</h3>
+                <p>Developing context-conditioned decision policies for multistage stochastic optimization, with optimization-integrated training, feasibility-aware deployment, and stage-wise evaluation under the information available at each decision point.</p>
+                <a class="text-link" href="https://github.com/LearningToOptimize/DecisionRules.jl" target="_blank" rel="noopener noreferrer">Related framework: DecisionRules.jl <span aria-hidden="true">↗</span></a>
               </div>
               <ul class="tag-list" aria-label="Project topics">
-                <li>Spectral attention</li>
-                <li>Long-range dependencies</li>
-                <li>Time-series forecasting</li>
+                <li>Stochastic optimization</li>
+                <li>Decision rules</li>
+                <li>Differentiable optimization</li>
               </ul>
             </div>
           </article>
@@ -251,17 +265,30 @@
             <p class="section-kicker">Publications</p>
             <h2 id="publications-title">Publications</h2>
           </div>
-          <p>Work across time-series forecasting, anomaly detection, and sequential representation learning.</p>
+          <p>Research in optimization and time-series learning, with publication status shown explicitly.</p>
         </div>
-        <p class="publication-note">* Equal contribution.</p>
+        <h3 class="publication-group-title" id="under-review-title">Under Review</h3>
+        <ol class="publication-list" aria-labelledby="under-review-title">
+          <li class="publication">
+            <div class="pub-year">2026</div>
+            <div>
+              <h3>SMOP: Self-supervised Multi-period Optimization Proxy for Resource Allocation with Temporal Constraints</h3>
+              <p class="pub-authors">Wenting Li, <strong>Dongjun Lee</strong>, Pascal Van Hentenryck</p>
+              <p class="pub-venue">Under review at ICLR 2027</p>
+              <p>A self-supervised proxy for multi-period resource-allocation linear programs, evaluated on fixed-commitment economic dispatch.</p>
+            </div>
+          </li>
+        </ol>
 
-        <ol class="publication-list">
+        <h3 class="publication-group-title" id="published-title">Published</h3>
+        <p class="publication-note">* Equal contribution.</p>
+        <ol class="publication-list" aria-labelledby="published-title">
           <li class="publication">
             <div class="pub-year">2025</div>
             <div>
               <h3>Causality-Aware Contrastive Learning for Robust Multivariate Time-Series Anomaly Detection</h3>
-              <p class="pub-authors">HyunGi Kim, Jisoo Mok, <strong>Dongjun Lee</strong>, Jaihyun Lew, Sungjae Kim, Sungroh Yoon</p>
-              <p class="pub-venue">International Conference on Machine Learning (ICML)</p>
+              <p class="pub-authors">Hyungi Kim, Jisoo Mok, <strong>Dongjun Lee</strong>, Jaihyun Lew, Sungjae Kim, Sungroh Yoon</p>
+              <p class="pub-venue">International Conference on Machine Learning (ICML), 2025 · PMLR 267:30591–30608</p>
               <p>Introduces a causality-aware contrastive learning approach for robust anomaly detection in multivariate temporal data.</p>
               <div class="inline-links">
                 <a class="text-link text-link-light" href="https://proceedings.mlr.press/v267/kim25aa.html" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
@@ -274,7 +301,7 @@
             <div>
               <h3>A Comprehensive Survey of Deep Learning for Time Series Forecasting: Architectural Diversity and Open Challenges</h3>
               <p class="pub-authors">Jongseon Kim*, Hyungjoon Kim*, HyunGi Kim, <strong>Dongjun Lee</strong>, Sungroh Yoon</p>
-              <p class="pub-venue">Artificial Intelligence Review</p>
+              <p class="pub-venue">Artificial Intelligence Review 58, 216 (2025)</p>
               <p>A structured review of deep-learning architectures for time-series forecasting and the open problems that shape reliable long-horizon prediction.</p>
               <a class="text-link text-link-light" href="https://doi.org/10.1007/s10462-025-11223-9" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">↗</span></a>
             </div>
@@ -284,7 +311,7 @@
             <div>
               <h3>Introducing Spectral Attention for Long-Range Dependency in Time Series Forecasting</h3>
               <p class="pub-authors">Bong Gyun Kang*, <strong>Dongjun Lee*</strong>, HyunGi Kim, DoHyun Chung, Sungroh Yoon</p>
-              <p class="pub-venue">Advances in Neural Information Processing Systems (NeurIPS)</p>
+              <p class="pub-venue">Advances in Neural Information Processing Systems (NeurIPS), 2024</p>
               <p>Develops a spectral-attention mechanism designed to capture long-range dependencies in time-series forecasting.</p>
               <div class="inline-links">
                 <a class="text-link text-link-light" href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/f6adf61977467560f79b95485d1f3a79-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
@@ -310,8 +337,8 @@
       <div class="container timeline-layout">
         <div class="section-heading sticky-heading">
           <p class="section-kicker">Applied Research / Experience</p>
-          <h2 id="experience-title">Applied research across real-world decision systems.</h2>
-          <p>Industry collaborations and independent work across credit risk, mobility, batteries, markets, and industrial diagnostics.</p>
+          <h2 id="experience-title">Research &amp; experience.</h2>
+          <p>Graduate research, selected industry collaborations, independent projects, and internships.</p>
           <ul class="skill-list" aria-label="Technical expertise">
             <li>Mixed-integer optimization</li>
             <li>Stochastic optimization</li>
@@ -324,20 +351,22 @@
           </ul>
         </div>
         <div class="timeline">
+          <div class="timeline-group-label">Graduate research</div>
           <article class="timeline-item">
             <div class="timeline-date">Aug. 2025–Present</div>
             <div>
               <h3>Graduate Researcher</h3>
               <p class="timeline-org">Georgia Institute of Technology · NSF AI4OPT</p>
-              <p>Researching learning-augmented optimization and scalable decision policies for large, structured systems under the supervision of Prof. Pascal Van Hentenryck.</p>
+              <p>Researching optimization proxies and structured feasibility repair under the supervision of Prof. Pascal Van Hentenryck. Coauthored SMOP, under review at ICLR 2027, and investigating full-solution prediction for large-scale unit-commitment MIPs.</p>
             </div>
           </article>
+          <div class="timeline-group-label">Collaborations &amp; independent research</div>
           <article class="timeline-item">
             <div class="timeline-date">Jan.–Apr. 2026</div>
             <div>
               <h3>Explainable Attention-Based Credit Risk Modeling</h3>
-              <p class="timeline-org">Equifax · Atlanta, USA</p>
-              <p>Built an end-to-end attention-based credit risk modeling framework and developed PCA/CCA-guided analyses connecting latent Transformer features to human-defined credit attributes.</p>
+              <p class="timeline-org">Equifax · Industry Collaboration · Atlanta, USA</p>
+              <p>Built attention-based credit risk models and PCA/CCA-guided analyses connecting Transformer features to interpretable credit attributes.</p>
             </div>
           </article>
           <article class="timeline-item">
@@ -345,14 +374,14 @@
             <div>
               <h3>Risk-Constrained Trading Agent</h3>
               <p class="timeline-org">Independent Research</p>
-              <p>Developed a leakage-safe multi-asset data pipeline, a calibrated multi-task Transformer, and cost-aware backtests with volatility-scaled sizing, exposure limits, and drawdown controls.</p>
+              <p>Developed a multi-asset data pipeline, a multi-task Transformer, and cost-aware backtests with exposure and drawdown controls.</p>
             </div>
           </article>
           <article class="timeline-item">
             <div class="timeline-date">Mar.–Jul. 2025</div>
             <div>
               <h3>Optimization Proxies for Driving Performance</h3>
-              <p class="timeline-org">Hyundai · Seoul, South Korea</p>
+              <p class="timeline-org">Hyundai · Industry Collaboration · Seoul, South Korea</p>
               <p>Automated optimal transmission-control calibration maps and developed a constraint-driven, physics-consistent model-to-vehicle matching pipeline.</p>
             </div>
           </article>
@@ -360,19 +389,19 @@
             <div class="timeline-date">Aug. 2024–Jun. 2025</div>
             <div>
               <h3>EV Battery Defect Anomaly Detection</h3>
-              <p class="timeline-org">LG Energy Solution · Seoul, South Korea</p>
-              <p>Designed process-aware tokenization and contrastive learning for highly imbalanced, noisy charge-discharge data, then fused time-series embeddings with expert tabular features.</p>
+              <p class="timeline-org">LG Energy Solution · Industry Collaboration · Seoul, South Korea</p>
+              <p>Developed process-aware tokenization and contrastive learning for battery anomaly detection, combining time-series embeddings with expert features.</p>
             </div>
           </article>
           <article class="timeline-item">
             <div class="timeline-date">Mar.–Oct. 2024</div>
             <div>
               <h3>AI-Based Motor Calibration</h3>
-              <p class="timeline-org">Hyundai Genesis · Seoul, South Korea</p>
+              <p class="timeline-org">Hyundai Genesis · Industry Collaboration · Seoul, South Korea</p>
               <p>Developed deep-learning methods to predict motor calibration maps from sparse operating-point data for reducing sixth-harmonic torque ripple and noise.</p>
             </div>
           </article>
-          <div class="timeline-group-label">Additional experience</div>
+          <div class="timeline-group-label">Internships</div>
           <article class="timeline-item timeline-item-compact">
             <div class="timeline-date">Jul. 2023</div>
             <div>
@@ -425,8 +454,7 @@
     <section id="contact" class="contact-section" aria-labelledby="contact-title">
       <div class="container contact-grid">
         <div>
-          <p class="section-kicker">Contact</p>
-          <h2 id="contact-title">Let’s discuss machine learning, optimization, and decision systems.</h2>
+          <h2 id="contact-title">Contact</h2>
         </div>
         <div class="contact-panel">
           <p>The most direct way to reach me is by email. You can also find my publications and current work through the profiles below.</p>
