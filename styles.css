@@ -369,6 +369,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .intro-copy p:last-child { margin-bottom: 0; }
 
 .section-heading { max-width: 780px; margin-bottom: clamp(34px, 4vw, 48px); }
+#research > .container > .section-heading { max-width: none; }
 .section-heading > p:last-child { margin: 16px 0 0; color: var(--ink-soft); font-size: 1.13rem; line-height: 1.55; }
 
 .split-heading {
@@ -380,6 +381,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .split-heading > p:last-child { margin: 0; }
+#projects > .container > .split-heading,
+#publications > .container > .split-heading { align-items: start; }
 
 .research-grid {
   display: grid;
