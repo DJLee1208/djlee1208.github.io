@@ -117,7 +117,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   position: relative;
   padding-block: 22px;
   color: var(--ink-soft);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 700;
   text-decoration: none;
 }
@@ -243,7 +243,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   max-width: 720px;
   margin: 14px 0 0;
   color: var(--ink-soft);
-  font-size: 1.12rem;
+  font-size: 1.1875rem;
   line-height: 1.62;
 }
 
@@ -286,7 +286,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   padding: 11px 18px;
   border: 1px solid var(--ink);
   border-radius: var(--radius);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 750;
   text-decoration: none;
   transition: transform 160ms ease, color 160ms ease, background 160ms ease;
@@ -363,14 +363,14 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .intro-copy p {
   margin: 0 0 22px;
   color: var(--ink-soft);
-  font-size: 1.16rem;
+  font-size: 1.25rem;
   line-height: 1.62;
 }
 .intro-copy p:last-child { margin-bottom: 0; }
 
 .section-heading { max-width: 780px; margin-bottom: clamp(34px, 4vw, 48px); }
 #research > .container > .section-heading { max-width: none; }
-.section-heading > p:last-child { margin: 16px 0 0; color: var(--ink-soft); font-size: 1.13rem; line-height: 1.55; }
+.section-heading > p:not(.section-kicker) { margin: 16px 0 0; color: var(--ink-soft); font-size: 1.25rem; line-height: 1.55; }
 
 .split-heading {
   max-width: none;
@@ -487,7 +487,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .project-facts div { border-left: 2px solid var(--gold); padding-left: 13px; }
 .project-facts strong, .project-facts span { display: block; }
 .project-facts strong { font-size: 1.3rem; line-height: 1.15; }
-.project-facts span { margin-top: 6px; color: var(--ink-soft); font-size: 1.05rem; line-height: 1.4; }
+.project-facts span { margin-top: 6px; color: var(--ink-soft); font-size: 1.1rem; line-height: 1.4; }
 
 .tag-list,
 .skill-list {
@@ -519,9 +519,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .section-dark { color: var(--paper); background: var(--charcoal); }
 .section-dark .section-kicker { color: #d6c67f; }
-.section-dark .section-heading > p:last-child { color: var(--charcoal-soft); }
+.section-dark .section-heading > p:not(.section-kicker) { color: var(--charcoal-soft); }
 .publication-group-title { margin: 40px 0 20px; color: #e4d796; font-size: 1.25rem; font-weight: 800; }
-.publication-note { margin: 0 0 20px; color: var(--charcoal-soft); font-size: 1rem; }
+.publication-note { margin: 0 0 20px; color: var(--charcoal-soft); font-size: 1.0625rem; }
 
 .publication-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid #3b4248; }
 .publication {
@@ -589,13 +589,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .contact-section .section-kicker { color: #d6c67f; }
 #contact-title { font-size: clamp(2.75rem, 5vw, 4.5rem); }
 .contact-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 0.7fr); gap: clamp(48px, 7vw, 84px); align-items: end; }
-.contact-panel > p { margin: 0; color: #c2c9ce; }
+.contact-panel > p { margin: 0; color: #c2c9ce; font-size: 1.25rem; }
 .contact-email { display: inline-block; margin-top: 24px; color: var(--paper); font-size: 1.65rem; font-weight: 700; text-underline-offset: 6px; }
 .contact-links { gap: 22px; margin-top: 30px; }
 .contact-links a { color: #d9dde0; }
 
 .site-footer { color: #c2c9ce; background: var(--ink); border-top: 1px solid #374048; }
-.footer-inner { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 30px; font-size: 1.05rem; }
+.footer-inner { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 30px; font-size: 1.1rem; }
 .footer-inner p { margin: 0; }
 .footer-inner a { color: inherit; font-weight: 700; text-underline-offset: 4px; }
 
@@ -640,7 +640,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .hero h1 { font-size: 3.35rem; }
   .hero-role { margin-top: 18px; font-size: 1.16rem; }
   .hero-thesis { margin-top: 14px; font-size: 1.2rem; }
-  .hero-summary { margin-top: 10px; font-size: 1.03rem; }
+  .hero-summary { margin-top: 10px; font-size: 1.125rem; }
   .hero-affiliation { margin-top: 8px; }
   .hero-actions { margin-top: 28px; }
   .profile-links { margin-top: 22px; }
